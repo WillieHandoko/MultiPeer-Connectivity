@@ -7,18 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1338DFE02C439060003A3BC8 /* MPTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1338DFDF2C439060003A3BC8 /* MPTestApp.swift */; };
+		1338DFE02C439060003A3BC8 /* BadmintonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1338DFDF2C439060003A3BC8 /* BadmintonApp.swift */; };
 		1338DFE22C439060003A3BC8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1338DFE12C439060003A3BC8 /* ContentView.swift */; };
 		1338DFE42C439061003A3BC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1338DFE32C439061003A3BC8 /* Assets.xcassets */; };
 		1338DFE72C439061003A3BC8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1338DFE62C439061003A3BC8 /* Preview Assets.xcassets */; };
+		1338DFEE2C4390B5003A3BC8 /* MultipeerSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1338DFED2C4390B5003A3BC8 /* MultipeerSession.swift */; };
+		1338DFF02C4390CB003A3BC8 /* GameSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1338DFEF2C4390CB003A3BC8 /* GameSetupView.swift */; };
+		1338DFF22C4390E6003A3BC8 /* GameBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1338DFF12C4390E6003A3BC8 /* GameBoardView.swift */; };
+		1338DFF42C439100003A3BC8 /* PeersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1338DFF32C439100003A3BC8 /* PeersView.swift */; };
+		1338DFF82C439DD0003A3BC8 /* BadmintonGame.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1338DFF62C439DD0003A3BC8 /* BadmintonGame.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1338DFDC2C439060003A3BC8 /* MPTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MPTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1338DFDF2C439060003A3BC8 /* MPTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPTestApp.swift; sourceTree = "<group>"; };
+		1338DFDF2C439060003A3BC8 /* BadmintonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadmintonApp.swift; sourceTree = "<group>"; };
 		1338DFE12C439060003A3BC8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1338DFE32C439061003A3BC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1338DFE62C439061003A3BC8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1338DFED2C4390B5003A3BC8 /* MultipeerSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipeerSession.swift; sourceTree = "<group>"; };
+		1338DFEF2C4390CB003A3BC8 /* GameSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSetupView.swift; sourceTree = "<group>"; };
+		1338DFF12C4390E6003A3BC8 /* GameBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoardView.swift; sourceTree = "<group>"; };
+		1338DFF32C439100003A3BC8 /* PeersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeersView.swift; sourceTree = "<group>"; };
+		1338DFF52C439156003A3BC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1338DFF72C439DD0003A3BC8 /* BadmintonGame.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BadmintonGame.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +62,13 @@
 		1338DFDE2C439060003A3BC8 /* MPTest */ = {
 			isa = PBXGroup;
 			children = (
-				1338DFDF2C439060003A3BC8 /* MPTestApp.swift */,
+				1338DFF52C439156003A3BC8 /* Info.plist */,
+				1338DFF62C439DD0003A3BC8 /* BadmintonGame.xcdatamodeld */,
+				1338DFDF2C439060003A3BC8 /* BadmintonApp.swift */,
+				1338DFED2C4390B5003A3BC8 /* MultipeerSession.swift */,
+				1338DFEF2C4390CB003A3BC8 /* GameSetupView.swift */,
+				1338DFF12C4390E6003A3BC8 /* GameBoardView.swift */,
+				1338DFF32C439100003A3BC8 /* PeersView.swift */,
 				1338DFE12C439060003A3BC8 /* ContentView.swift */,
 				1338DFE32C439061003A3BC8 /* Assets.xcassets */,
 				1338DFE52C439061003A3BC8 /* Preview Content */,
@@ -137,8 +154,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1338DFF02C4390CB003A3BC8 /* GameSetupView.swift in Sources */,
+				1338DFF22C4390E6003A3BC8 /* GameBoardView.swift in Sources */,
+				1338DFF42C439100003A3BC8 /* PeersView.swift in Sources */,
+				1338DFEE2C4390B5003A3BC8 /* MultipeerSession.swift in Sources */,
+				1338DFF82C439DD0003A3BC8 /* BadmintonGame.xcdatamodeld in Sources */,
 				1338DFE22C439060003A3BC8 /* ContentView.swift in Sources */,
-				1338DFE02C439060003A3BC8 /* MPTestApp.swift in Sources */,
+				1338DFE02C439060003A3BC8 /* BadmintonApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +297,7 @@
 				DEVELOPMENT_TEAM = 459W9TDYSS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MPTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +327,7 @@
 				DEVELOPMENT_TEAM = 459W9TDYSS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MPTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -344,6 +368,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1338DFF62C439DD0003A3BC8 /* BadmintonGame.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1338DFF72C439DD0003A3BC8 /* BadmintonGame.xcdatamodel */,
+			);
+			currentVersion = 1338DFF72C439DD0003A3BC8 /* BadmintonGame.xcdatamodel */;
+			name = BadmintonGame.xcdatamodeld;
+			path = "/Users/williamhandoko/Documents/Apple Developer Academy/MPTest/MPTest/BadmintonGame.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1338DFD42C439060003A3BC8 /* Project object */;
 }
